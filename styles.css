@@ -1,0 +1,199 @@
+.loomspark {
+  font-family: "Libertinus Serif", serif;
+  font-weight: bolder;
+  font-size: 50px;
+  color: white;
+  z-index: 10;
+}
+
+.captions {
+  font-family: "Libertinus Serif", serif;
+  font-weight: bolder;
+  z-index: 10;
+  color: white;
+  font-size: 2rem;
+}
+
+.loomspark-caption {
+  font-family: "Libertinus Serif", serif;
+  font-weight: bolder;
+  font-size: 20px;
+  color: white;
+  z-index: 10;
+  padding: 5px;
+}
+
+.title-sect {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/flowers.png");
+  background-size: auto;
+  background-position: center;
+  height: 100vh;
+  filter: blur(10px);
+  animation: sharpen 1.5s forwards;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes sharpen {
+  from {
+    filter: blur(10px);
+  }
+  to {
+    filter: blur(0px);
+  }
+}
+
+@media (max-width: 768px) {
+  .title-sect {
+    background-size: cover; /* Ensure it scales */
+    background-position: center center;
+  }
+
+  .loomspark {
+    font-size: 3.5rem; /* Scale text for small screens */
+    text-align: center;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+  }
+
+  .loomspark-logo {
+    size: 50%;
+  }
+}
+
+.title-sect::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Adjust the 0.4 for stronger or lighter tint */
+  z-index: 1;
+}
+
+.navbar-links {
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.loomspark-logo {
+  width: 30%;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+.product-pic {
+  width: 30%;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+.about-company-sect {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #D99AC5;
+}
+
+.cart-sect {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #D99AC5;
+  padding: 100px;
+}
+
+.payment-method-sect {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #DCCDE8;
+}
+
+.about-delivery-sect {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #B37BA4;
+}
+
+.contacts-sect {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #00100B;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 1s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.content {
+  color: white;
+  font-family: "Libertinus Serif", serif;
+  padding: 20px;
+  padding-bottom: 0px;
+  font-size: 1rem
+}
+
+.contact-info {
+  padding-top: 0px;
+}
+
+.med-content {
+  color: white;
+  font-family: "Libertinus Serif", serif;
+  padding: 20px;
+  padding-bottom: 0px;
+  font-size: 1.5rem
+}
+
+.section-separator {
+  display: block; /* Make it a block element */
+  border: none;   /* Remove default border */
+  height: 2px;    /* This is the thickness */
+  background-color: white; /* Line color */
+  width: 50%;     /* Line width */
+  margin: 20px auto;
+}
+
+.icon {
+  padding: 5px;
+}
+
+.list-group-item {
+  padding: 20px 30px; /* example padding: 20px top/bottom, 30px left/right */
+  border-radius: 8px; /* optional, for nicer corners */
+  margin-bottom: 10px; /* optional, add space between items */
+  background-color: #DCCDE8;
+}
